@@ -1,0 +1,126 @@
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+body {
+  background-image: url("bluesky.jpg");
+}
+
+.container {
+  font-size: 2em;
+  font-family: sans-serif;
+}
+
+.pageTitle {
+  height: 60px;
+  margin: 25px auto 0px auto;
+}
+
+.top {
+  height: 75px;
+  background-color: none;
+}
+
+.top:hover {
+  background-color: #e9ecef;
+}
+
+form {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+input {
+  font-size: 22px;
+  display: inline-block;
+}
+
+.form-check-label {
+  color: white;
+  font-size: 0.7em;
+}
+
+.center {
+  height: 60px;
+  width: 420px;
+  margin: 5px auto;
+}
+
+.down {
+  height: 240px;
+  width: 300px;
+  margin: 5px auto 10px auto;
+}
+
+.currentWeather {
+  height: 200px;
+  width: 240px;
+  font-size: 1em;
+  color: white;
+  margin: auto;
+}
+
+.render {
+  width: 200px;
+  margin: auto;
+}
+
+#description {
+  display: inline-block;
+}
+
+div {
+  text-align: center;
+}
+
+h1 {
+  color: white;
+  font-weight: bold;
+}
+
+#errorMessage {
+  font-size: 20px;
+  margin: auto;
+}
+
+img {
+  display: inline-block;
+  height: 50px;
+  width: 50px;
+}
+
+.bottom {
+  height: 200px;
+  width: 700px;
+  margin: 5px auto 10px auto;
+  text-align: center;
+}
+
+.forecast {
+  height: 160px;
+  width: 210px;
+  font-size: 0.8em;
+  color: white;
+  margin: auto;
+  border: solid none 2px;
+  display: inline-block;
+}
+
+#forecast1 {
+  float: left;
+}
+
+#forecast3 {
+  float: right;
+}
+
+footer {
+  color: white;
+  margin: 10px auto;
+  text-align: center;
+}

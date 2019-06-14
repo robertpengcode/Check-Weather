@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang='en'>
+
+<head>
+  <meta charset='UTF-8'>
+  <title>Check Weather</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <link rel='stylesheet' type='text/css' href='style.css'>
+</head>
+
+<body>
+  <div class="container">
+    <div class="pageTitle">
+      <h1>Check Weather</h1>
+    </div>
+    <nav class="top navbar">
+      <form class="form-inline my-2 my-lg-0" id="submit">
+        <input class="form-control mr-sm-2" type="text" placeholder="Zip Code" aria-label="Search" id="inputZip">
+
+        <div class="form-check form-check-inline">
+          <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1" checked>
+          <label class="form-check-label" for="inlineRadio1">°F</label>
+        </div>
+        <div class="form-check form-check-inline">
+          <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2">
+          <label class="form-check-label" for="inlineRadio2">°C</label>
+        </div>
+
+        <button class="btn btn-outline-primary" type="submit" id="getWeather">Get Weather</button>
+      </form>
+    </nav>
+    <div class="center">
+      <div id="errorMessage" class="alert alert-danger alert-dismissible fade show" role="alert">
+        <span>Please enter a valid 5-digit zip code!</span>
+      </div>
+
+    </div>
+    <div class="down">
+      <div class="currentWeather">
+        <div class="render" id="time"></div>
+        <div class="render" id="icon"></div>
+        <div class="render" id="description"></div>
+        <div class="render" id="temp"></div>
+      </div>
+    </div>
+    <div class="bottom">
+      <div class="forecast" id="forecast1">
+        <div class="render" id="timeF1"></div>
+        <div class="render" id="iconF1"></div>
+        <div class="render" id="desF1"></div>
+        <div class="render" id="tempF1"></div>
+      </div>
+      <div class="forecast" id="forecast2">
+        <div class="render" id="timeF2"></div>
+        <div class="render" id="iconF2"></div>
+        <div class="render" id="desF2"></div>
+        <div class="render" id="tempF2"></div>
+      </div>
+      <div class="forecast" id="forecast3">
+        <div class="render" id="timeF3"></div>
+        <div class="render" id="iconF3"></div>
+        <div class="render" id="desF3"></div>
+        <div class="render" id="tempF3"></div>
+      </div>
+
+    </div>
+  </div>
+  <footer>Made by Robert Peng 😜 2019</footer>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src='apiKey.js'></script>
+  <script src='app.js'></script>
+</body>
+
+</html>
